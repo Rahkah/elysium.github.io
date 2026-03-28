@@ -1,0 +1,26 @@
+{
+  "name": "rahkah.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahkah/rahkah.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahkah/rahkah.github.io/issues"
+  },
+  "homepage": "https://github.com/Rahkah/rahkah.github.io#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "front-matter": "^4.0.2",
+    "glob": "^13.0.6",
+    "openai": "^6.33.0"
+  }
+}

@@ -35,6 +35,15 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Auto Translate
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+          MODEL_NAME: ${{ secrets.MODEL_NAME }}
+        run: |
+          npm install openai front-matter glob dotenv
+          node translate.js
+
       - name: Build Theme CSS
         run: |
           cd themes/digio-theme
