@@ -11,14 +11,25 @@
 	<div class="grid lg:grid-rows-2 gap-4">
 		<div class="not-prose flex cursor-default flex-col space-y-2 rounded-lg border border-white p-6">
 			<img src="{{ or $p.statusImage "/status.png" }}" alt="Status" class="self-start">
+			
 			{{ $displayQuote := false }}
 			{{ if or (not $p.statusText) (eq $p.statusText "A way to let everyone know what you're up to...") }}
 				{{ $displayQuote = true }}
 			{{ end }}
 
 			{{ if and $displayQuote site.Data.quotes }}
-				{{ $randomQuote := index (shuffle site.Data.quotes) 0 }}
-				<div class="italic text-sm">"{{ $randomQuote.text }}" — {{ $randomQuote.author }}</div>
+				<div id="status-quote" class="italic text-sm">
+					{{/* 初始显示一条随机名言，防止 JS 加载前的空白 */}}
+					{{ $q := index (shuffle site.Data.quotes) 0 }}
+					"{{ $q.text }}" — {{ $q.author }}
+				</div>
+				<script>
+					(function() {
+						const quotes = {{ site.Data.quotes | jsonify | safeJS }};
+						const q = quotes[Math.floor(Math.random() * quotes.length)];
+						document.getElementById('status-quote').innerText = `"${q.text}" — ${q.author}`;
+					})();
+				</script>
 			{{ else }}
 				{{ with $p.statusText }}<div>{{ . | markdownify }}</div>{{ end }}
 			{{ end }}
