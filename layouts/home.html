@@ -11,7 +11,12 @@
 	<div class="grid lg:grid-rows-2 gap-4">
 		<div class="not-prose flex cursor-default flex-col space-y-2 rounded-lg border border-white p-6">
 			<img src="{{ or $p.statusImage "/status.png" }}" alt="Status" class="self-start">
-			{{ if and (eq $p.statusText "A way to let everyone know what you're up to...") site.Data.quotes }}
+			{{ $displayQuote := false }}
+			{{ if or (not $p.statusText) (eq $p.statusText "A way to let everyone know what you're up to...") }}
+				{{ $displayQuote = true }}
+			{{ end }}
+
+			{{ if and $displayQuote site.Data.quotes }}
 				{{ $randomQuote := index (shuffle site.Data.quotes) 0 }}
 				<div class="italic text-sm">"{{ $randomQuote.text }}" — {{ $randomQuote.author }}</div>
 			{{ else }}
