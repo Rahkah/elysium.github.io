@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2023-01-15T09:00:00-07:00</lastmod>
+    <lastmod>2026-03-28T16:17:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +14,31 @@
                 hreflang="zh-cn"
                 href="http://localhost:1313/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/write/</loc>
+    <lastmod>2026-03-28T16:17:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/write/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/write/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/write/first_content/</loc>
+    <lastmod>2026-03-28T16:17:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/write/first_content-copy/</loc>
+    <lastmod>2026-03-28T16:17:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/write/first_content-copy-2/</loc>
+    <lastmod>2026-03-28T16:17:21+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/write/first_content-copy-3/</loc>
+    <lastmod>2026-03-28T16:17:21+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/open-source/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
@@ -28,73 +53,20 @@
                 href="http://localhost:1313/open-source/"
                 />
   </url><url>
-    <loc>http://localhost:1313/write/</loc>
-    <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/write/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/write/"
-                />
-  </url><url>
     <loc>http://localhost:1313/write/test/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/write/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/write/test/"
-                />
   </url><url>
     <loc>http://localhost:1313/write/test2/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/open-source/test3/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/open-source/test3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/open-source/test3/"
-                />
   </url><url>
     <loc>http://localhost:1313/open-source/test4/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/open-source/test4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/open-source/test4/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/open-source/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/open-source/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/tags/open-source/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
@@ -111,16 +83,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/write/</loc>
     <lastmod>2023-01-15T09:00:00-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/write/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/tags/write/"
-                />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link

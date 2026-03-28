@@ -52,14 +52,6 @@
                         />{{ end }} {{ $post.LinkTitle }}
                     </h3>
 
-                    {{ with $post.Params.teaser }}
-                    <p><em>{{ . }}</em></p>
-                    {{ else }} {{ with $post.Params.description }}
-                    <p><em>{{ . }}</em></p>
-                    {{ else }}
-                    <p><em>{{ $post.Summary }}</em></p>
-                    {{ end }} {{ end }}
-
                     <span class="self-start text-sm text-white underline">
                         Read more →
                     </span>
@@ -76,10 +68,6 @@
                         {{ with $link.icon }}<img src="{{ . }}" alt="" />{{ end
                         }} {{ $link.title }}
                     </h3>
-
-                    {{ with $link.teaser }}
-                    <p><em>{{ . }}</em></p>
-                    {{ end }}
 
                     <span class="self-start text-sm text-white underline">
                         Read more →

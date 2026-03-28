@@ -145,7 +145,15 @@ params:
 
 # 自定义菜单配置
 menu:
-    main: []                           # 主导航菜单
+    main:
+        - identifier: write
+          name: 文章
+          url: /write/
+          weight: 1
+        - identifier: me
+          name: 关于
+          url: /me/
+          weight: 3
 
     social:                            # 社交链接菜单
         - identifier: github

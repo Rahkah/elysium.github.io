@@ -1,8 +1,8 @@
 +++
 portraitImage = "/portrait.png"
 
-introTitle = "我是Dean"
-introBody = "这是我的个人博客，这里要写一些介绍，我不知道写什么"
+introTitle = "I'm Dean"
+introBody = "This is my personal blog. I should write some introduction here, but I don't know what to write yet."
 
 statusImage = "/status.png"
 
