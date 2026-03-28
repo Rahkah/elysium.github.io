@@ -39,6 +39,7 @@ jobs:
         run: |
           cd themes/digio-theme
           npm install
+          sed -i 's/npx //g' package.json
           npm run build
 
       - name: Build with Hugo
