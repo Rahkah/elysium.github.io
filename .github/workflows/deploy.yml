@@ -39,8 +39,7 @@ jobs:
         run: |
           cd themes/digio-theme
           npm install
-          sed -i 's/npx //g' package.json
-          npm run build
+          npx --yes @tailwindcss/cli -i assets/css/styles.css -o static/css/styles.css
 
       - name: Build with Hugo
         run: hugo --minify --gc   # 生成优化后的静态文件
