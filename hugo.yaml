@@ -17,11 +17,11 @@ hasCJKLanguage: true
 languages:
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        title: Elysium
         weight: 1
         params:
             sidebar:
-                subtitle: 演示说明
+                subtitle: subtitle
     en:
         languageName: English           # 语言显示名称
         title: Elysium             # 该语言下的网站标题
