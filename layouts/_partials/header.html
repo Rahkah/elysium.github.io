@@ -1,0 +1,17 @@
+<header class="py-6 px-6">
+    <div class="flex justify-between items-center w-full">
+        <div class="flex justify-start items-center">
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>
+        
+        {{ if .IsTranslated }}
+        <nav class="flex items-center gap-4">
+            {{ range .Translations }}
+                <a href="{{ .RelPermalink }}" class="text-xs uppercase tracking-widest transition-all duration-150 hover:text-pink-300">
+                    {{ .Language.LanguageName }}
+                </a>
+            {{ end }}
+        </nav>
+        {{ end }}
+    </div>
+</header>
