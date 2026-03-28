@@ -4,10 +4,10 @@
             {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
         </div>
         
-        <nav class="flex items-center gap-4">
-            {{ range .AllTranslations }}
-                <a href="{{ .RelPermalink }}" class="text-xs uppercase tracking-widest transition-all duration-150 {{ if eq .Lang site.Language.Lang }}text-pink-300 font-bold{{ else }}hover:text-pink-300{{ end }}">
-                    {{ .Language.LanguageName }}
+        <nav class="flex items-center">
+            {{ range .Translations }}
+                <a href="{{ .RelPermalink }}" class="text-xs uppercase tracking-widest transition-all duration-150 hover:text-pink-300">
+                    {{ if eq .Language.Lang "en" }}中文{{ else }}English{{ end }}
                 </a>
             {{ end }}
         </nav>
